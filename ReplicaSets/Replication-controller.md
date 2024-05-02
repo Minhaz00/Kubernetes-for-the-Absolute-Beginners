@@ -1,4 +1,4 @@
-<div style="width: 500px; margin: 0 auto;">
+<div style="width: 450px; margin: 0 auto;">
 
 
 <h1>Replication Controller in Kubernetes</h1>
