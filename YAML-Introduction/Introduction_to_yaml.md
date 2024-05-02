@@ -43,21 +43,20 @@ Compared to XML, JSON boasts a significantly clearer, user-friendly, concise, an
 
 However, it might not provide optimal assistance for intricate configurations.
 
-```JSON
+```json
 {
-	"Employees": [
+  "Employees": [
     {
-			"name": "John Doe",
-			"department": "Engineering",
-			"country": "USA"
-		},
-
-		{
-			"name": "Kate Kateson",
-			"department": "IT support",
-			"country": "United Kingdom"
-		}
-	]
+      "name": "John Doe",
+      "department": "Engineering",
+      "country": "USA"
+    },
+    {
+      "name": "Kate Kateson",
+      "department": "IT support",
+      "country": "United Kingdom"
+    }
+  ]
 }
 ```
 
@@ -107,7 +106,7 @@ In YAML, there is an emphasis on indentation and line separation to denote level
 
 YAML doesn't use symbols such as curly braces, square brackets, or opening or closing tags - just indentation. YAML doesn't allow to use any tabs when creating indentation in YAML files. YAML uses spaces to denote indentation.
 
-## How to write a comment in YAML
+## Comment in YAML
 
 To add a comment to comment out a line of code, use the # character.
 
@@ -173,6 +172,6 @@ The YAML code is using the - character to indicate that each car is an item in t
 
 In summary, the provided YAML code is valid and defines a list of three cars, where each car is represented as a dictionary with the keys brand, model, color, and mileage.
 
-## Conclusion?
+## Conclusion
 
 In conclusion, YAML offers a simple and readable way to represent data and configurations, making it a popular choice for various applications, especially in environments like Kubernetes where human readability and machine interpretability are crucial.
