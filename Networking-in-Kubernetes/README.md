@@ -48,7 +48,7 @@ their own IP addresses assigned. However, if we look
 at the internal network addresses, we can see that they are the same.
 
 <div style="text-align:center">
-    <img src="./images/4.png" alt="Alt text"width="600" />
+    <img src="./images/5.png" alt="Alt text"width="600" />
 </div>
 
 The two networks
