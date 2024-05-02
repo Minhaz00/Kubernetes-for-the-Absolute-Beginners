@@ -13,7 +13,7 @@ Consider a scenario where we have a single POD running our application. In the e
 <h2>Ensuring High Availability</h2>
 <p>Replication Controllers facilitate the deployment and management of multiple instances of a single POD within the Kubernetes cluster. By maintaining a specified number of replicas, even if it's just one or a hundred, Replication Controllers ensure that our application remains accessible at all times.</p>
 
-<img src="./image.png" width='400px'>
+<img src="./images/image.png" width='400px'>
 
 <p>Let’s go back to our 
 first scenario were we had a single POD running our application. What if for some reason, our application crashes and the POD fails? Users will no longer be able to access our application. To prevent users from losing access to our application, we would like to have more than one instance or POD running at the same time. That 
@@ -23,7 +23,7 @@ POD? No! Even if you have a single POD, the replication controller can help by a
 <h2>Load Balancing and Scalability</h2>
 <p>Another crucial role of Replication Controllers is load balancing and scalability. As user demand grows, additional PODs are deployed to share the load across multiple instances. If resource constraints are encountered on a particular node, Replication Controllers intelligently deploy additional PODs across other nodes in the cluster, ensuring optimal resource utilization and scalability of our application.</p>
 
-<img src="./image-1.png" width='400px'>
+<img src="./images/image-1.png" width='400px'>
 
 <p>When the number of users increase we deploy additional POD to balance the load across the two pods. If the demand further increases and If we 
 were to run out of resources on the first node, we could deploy additional PODs across other nodes in the cluster. As you can see, the replication controller spans across multiple nodes in the cluster. It helps us balance the load across multiple pods on different nodes as well as scale our application when the demand increases.</p>
@@ -33,7 +33,7 @@ were to run out of resources on the first node, we could deploy additional PODs 
 
 Create a replication controller definition file. Let's name it `rc-definition.yml`. The configuration file follows the standard structure of Kubernetes definition files, consisting of four sections: `apiVersion`, `kind`, `metadata`, and `spec`.
 
-<img src="./image-5.png" width='300px'>
+<img src="./images/image-5.png" width='300px'>
 
 Set the `apiVersion` to `v1`, as Replication Controllers are supported in Kubernetes API version v1.Specify the `kind` as `ReplicationController`.
 
@@ -42,7 +42,7 @@ Under the `metadata` section, add a name for the Replication Controller, e.g., `
 The crucial part of the definition file is the `spec` section, which defines the desired state of the Replication Controller. Within the `spec` section, create a `template` section to provide a POD template for the Replication Controller to create replicas.
 
 
-<img src="./image-6.png" width='300px'>
+<img src="./images/image-6.png" width='300px'>
 
 Populate the `template` section with the contents of a pod-definition file, excluding the first two lines (`apiVersion` and `kind`). Ensure that the pod-definition content is intended under the `template` section.
 
@@ -50,7 +50,7 @@ Add a property called `replicas` under the `spec` section to specify the desired
 
 Here is the final definition file:
 
-<img src="./image-2.png" width='300px'>
+<img src="./images/image-2.png" width='300px'>
 
 
 <h3>Step 2: Create the Replication Controller</h3>
@@ -78,7 +78,7 @@ kubectl get pods
 
 The expected output of these command is given below:
 
-<img src="./image-7.png" width='300px'>
+<img src="./images/image-7.png" width='300px'>
 
 
 By following these steps, you can create and manage Replication Controllers in Kubernetes to ensure the availability and scalability of your applications.

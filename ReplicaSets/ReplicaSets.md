@@ -12,7 +12,7 @@ ReplicaSets follow the standard Kubernetes configuration structure, including ap
 ### Specifying Replicas
 ReplicaSets specify the desired number of replicas (Pod copies) using the spec section, similar to Replication Controllers. For example, we can set the number of replicas to 3.
 
-<img src="./image-8.png" width='300px'>
+<img src="./images/image-8.png" width='300px'>
 
 
 ### Selector Definition
@@ -23,7 +23,7 @@ Even Pods created before the ReplicaSet can be managed if they match the labels 
 
 Here is an example of the definition:
 
-<img src="./image-3.png" width='300px'>
+<img src="./images/image-3.png" width='300px'>
 
 Once the configuration file is ready, execute the following command to apply the configuration from the file:
 
@@ -45,4 +45,4 @@ kubectl get pods
 
 These are the expected output of the above 2 commands:
 
-<img src="./image-4.png" width='300px'>
+<img src="./images/image-4.png" width='300px'>
