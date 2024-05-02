@@ -5,10 +5,11 @@
 ### 1.Single node Kubernetes cluster
 <p>We will start
 with a single node Kubernetes cluster. The node has an IP address,
-say it is 192.168.1.2 in this case,
-this is the IP address we use to access the Kubernetes node, SSH into it,etc.
+say it is 192.168.1.2 in this case, this is the IP address we use to access the Kubernetes node, SSH into it,etc.
 
-<img src="./images/1.png" alt="Alt text" width="600"/>
+<div style="text-align:center">
+    <img src="./images/1.png" alt="Alt text"width="600" />
+</div>
 
  > **Note:** Remember, if we're using a Minikube setup,then it is the IP address of minikube virtual machine.
 
@@ -17,7 +18,9 @@ is always assigned to a Docker container.In the Kubernetes world,
 the IP address is assigned to a pod. Each pod in the Kubernetes
 gets its own internal IP address.
 
-<img src="./images/2.png" alt="Alt text" width="400"/>
+<div style="text-align:center">
+    <img src="./images/2.png" alt="Alt text"width="600" />
+</div>
 
 In this case,
 it's in the range 10.244 series, and the IP assigned to the pod
@@ -32,7 +35,9 @@ to each other through this IP.But accessing the other pods
 using this internal IP address may not be a good idea as it's subject to change
 when pods are recreated.
 
-<img src="./images/3.png" alt="Alt text" width="600"/>
+<div style="text-align:center">
+    <img src="./images/3.png" alt="Alt text"width="600" />
+</div>
 
 ### 2.Multiple nodes Kubernetes cluster
 
@@ -42,7 +47,9 @@ to an internal network, and they have
 their own IP addresses assigned. However, if we look
 at the internal network addresses, we can see that they are the same.
 
-<img src="./images/5.png" alt="Alt text" width="600"/>
+<div style="text-align:center">
+    <img src="./images/4.png" alt="Alt text"width="600" />
+</div>
 
 The two networks
 have an address 10.244.0.0, and the pods deployed
@@ -61,7 +68,9 @@ we don't have to set it up all on our own as there are multiple
 pre-built solutions available. Some of them are the Cisco ACI networks, Cilium, Big Cloud Fabric, Flannel, VMware NSX-T, and Calico. Depending on the platform we're deploying
 our Kubernetes cluster on.
 
-<img src="./images/6.png" alt="Alt text" width="600"/>
+<div style="text-align:center">
+    <img src="./images/6.png" alt="Alt text"width="600" />
+</div>
 
 The cluster networking
 enables communication between the different pods or nodes to meet the networking
