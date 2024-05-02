@@ -7,12 +7,13 @@ Replication Controllers and ReplicaSets serve a similar purpose in Kubernetes, b
 ReplicaSets are similar to Replication Controllers but come with some differences. Let's break down the key points:
 
 ### Configuration
-ReplicaSets follow the standard Kubernetes configuration structure, including apiVersion, kind, metadata, and spec.
+ReplicaSets follow the standard Kubernetes configuration structure, including apiVersion, kind, metadata, and spec. The apiVersion for ReplicaSets is apps/v1, different from the one used for Replication Controllers (v1). Using the wrong apiVersion can lead to errors.Set the kind to ReplicaSet and provide a name and labels in the metadata section.
 
-1. The apiVersion for ReplicaSets is apps/v1, different from the one used for Replication Controllers (v1). Using the wrong apiVersion can lead to errors.
-2. Set the kind to ReplicaSet and provide a name and labels in the metadata section.
 ### Specifying Replicas
 ReplicaSets specify the desired number of replicas (Pod copies) using the spec section, similar to Replication Controllers. For example, we can set the number of replicas to 3.
+
+<img src="./image-8.png" width='300px'>
+
 
 ### Selector Definition
 Unlike Replication Controllers, ReplicaSets require a selector definition. This helps the ReplicaSet identify which Pods it should manage.
