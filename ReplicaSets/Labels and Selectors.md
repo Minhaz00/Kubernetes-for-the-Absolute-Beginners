@@ -17,7 +17,7 @@ Labels are key-value pairs attached to Kubernetes objects, such as Pods, Service
 Consider a scenario where we deploy multiple instances of a frontend web application as Pods. We want to ensure that we always have three active Pods running to maintain availability. Here's how Labels and ReplicaSets come into play:
 
 <!-- <img src="./images/image-9.png" width='400px'> -->
-![alt text](image-9.png)
+![alt text](./images/image-9.png)
 
 The ReplicaSet continuously monitors the labeled Pods. If any Pod fails or becomes unavailable, the ReplicaSet automatically deploys new Pods to maintain the desired number of replicas.
 
