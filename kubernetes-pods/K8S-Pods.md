@@ -33,4 +33,71 @@ Once the file is created, run the command kubectl create -f followed by the file
 kubectl create -f pod-definition.yml
 ```
 
-![alt text](Pod-06.JPG)
+```
+kubectl get pods
+```
+
+This command will list all the pods in your cluster, and we should see myapp-pod listed among them.
+
+```
+kubectl describe pod myapp-pod
+```
+
+Running kubectl describe pod myapp-pod provides detailed information about the specified pod named myapp-pod. This command outputs a comprehensive description of the pod's current state, including its configuration, status, events, and associated resources. Here's an example of what we might see:
+
+```
+Name:         myapp-pod
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Tue, 02 May 2024 12:00:00 +0000
+Labels:       app=myapp
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+IPs:
+  IP:  172.17.0.5
+Containers:
+  myapp-container:
+    Container ID:   containerd://abc123...
+    Image:          myapp:latest
+    Image ID:       docker.io/myapp@sha256:...
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 02 May 2024 12:00:05 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      ENV_VAR:      value
+    Mounts:
+      /data from myapp-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-abcde (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  myapp-volume:
+    Type:    PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  myapp-pvc
+    ReadOnly:   false
+  default-token-abcde:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-abcde
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason                  Age   From               Message
+  ----     ------                  ----  ----               -------
+  Normal   Scheduled               2m    default-scheduler  Successfully assigned default/myapp-pod to minikube
+  Normal   Pulling                 2m    kubelet            Pulling image "myapp:latest"
+  Normal   Pulled                  1m    kubelet            Successfully pulled image "myapp:latest"
+  Normal   Created                 1m    kubelet            Created container myapp-container
+  Normal   Started                 1m    kubelet            Started container myapp-container
+```
