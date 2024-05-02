@@ -1,4 +1,3 @@
-<div style="width: 450px; margin: 0 auto;">
 
 
 <h1>Replication Controller in Kubernetes</h1>
@@ -70,6 +69,3 @@ kubectl get pods
 ```
 
 By following these steps, you can create and manage Replication Controllers in Kubernetes to ensure the availability and scalability of your applications.
-
-
-</div>
