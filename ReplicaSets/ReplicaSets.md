@@ -41,3 +41,7 @@ To see the PODs created by the Replication Controller, execute the following com
 ```
 kubectl get pods
 ```
+
+These are the expected output of the above 2 commands:
+
+<img src="./image-4.png" width='300px'>
