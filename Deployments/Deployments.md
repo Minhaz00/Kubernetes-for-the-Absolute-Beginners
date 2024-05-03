@@ -9,6 +9,7 @@ Imagine you have a web server application that you want to deploy in a productio
 While ReplicaSets ensure a specific number of identical Pod replicas are running at all times, Deployments provide a higher-level abstraction for managing application deployment and scaling. Deployments offer additional capabilities such as rolling updates, rollbacks, and coordinated changes, making them more versatile and suitable for complex deployment scenarios.
 
 
+<img src="./images/image-2.png" >
 
 
 ## Use Cases of Deployments
