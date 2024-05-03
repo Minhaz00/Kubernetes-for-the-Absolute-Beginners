@@ -59,11 +59,6 @@ The difference between the recreate and rollingupdate strategies can also be see
 
 
 
-
-
-
-
-
 ## Updating the Deployment and Rollback 
 - **Update:** When creating a deployment, under the hood, Kubernetes automatically generates a ReplicaSet and deploys the specified number of Pods. During an upgrade, a new ReplicaSet is created to deploy containers while gradually scaling down the old ReplicaSet.
 
@@ -81,7 +76,7 @@ right, once we upgrade your application? There could be something’s wrong with
     Kubernetes deployments allow us to rollback to 
 a previous revision. To undo a change run the command `kubectl rollout undo deployment/<deployment-name>`. The deployment will then destroy the PODs in the new replicaset and bring the older ones up in the old replicaset. And our application is back to its older format.
 
-    ![alt text](./images/mage-6.png)
+    ![alt text](./images/image-6.png)
 
     When we compare the output of the `kubectl get replicasets` command, before and after the rollback, we will be able to notice this difference. Before the rollback the first replicaset had 0 PODs and the new replicaset had 5 PODs and this is reversed after the rollback is finished.
 
