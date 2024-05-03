@@ -26,7 +26,7 @@ In this case,
 it's in the range 10.244 series, and the IP assigned to the pod
 is 10.244.0.2.
 
-<span style="font-size: larger;">_How is it getting this IP address?_</span>
+<span style="font-size: larger;">How is it getting this IP address?</span>
 
 When Kubernetes is initially configured, we create an internal private network
 with the address 10.244.0.0, and all the pods are attached to it. When we deploy multiple pods, they all get a separate IP
