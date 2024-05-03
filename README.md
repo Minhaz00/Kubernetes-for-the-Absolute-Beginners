@@ -10,3 +10,4 @@
     - [Labels and Selectors](https://github.com/Minhaz00/Kubernetes-for-the-Absolute-Beginners/blob/main/ReplicaSets/Labels%20and%20Selectors.md)
     - [Deployments](https://github.com/Minhaz00/Kubernetes-for-the-Absolute-Beginners/blob/main/Deployments/Deployments.md)
     - [Update and Rollback](https://github.com/Minhaz00/Kubernetes-for-the-Absolute-Beginners/blob/main/Deployments/Updates%20and%20rollback.md)
+
