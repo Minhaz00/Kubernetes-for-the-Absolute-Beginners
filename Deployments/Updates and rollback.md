@@ -81,9 +81,11 @@ a previous revision. To undo a change run the command `kubectl rollout undo depl
     When we compare the output of the `kubectl get replicasets` command, before and after the rollback, we will be able to notice this difference. Before the rollback the first replicaset had 0 PODs and the new replicaset had 5 PODs and this is reversed after the rollback is finished.
 
     Before rollback:
+
     ![alt text](./images/image-7.png)
 
     After rollback:
+    
     ![alt text](./images/image-8.png)
 
 
