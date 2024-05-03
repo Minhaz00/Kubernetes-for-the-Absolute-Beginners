@@ -32,7 +32,7 @@ When Kubernetes is initially configured, we create an internal private network
 with the address 10.244.0.0, and all the pods are attached to it. When we deploy multiple pods, they all get a separate IP
 assigned from this network. The pods can communicate
 to each other through this IP.But accessing the other pods
-using this internal IP address may not be a good idea as it's subject to change
+using this internal IP address may not be a good idea as it's subject to change.
 when pods are recreated.
 
 <div style="text-align:center">
