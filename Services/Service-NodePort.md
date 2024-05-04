@@ -7,7 +7,7 @@ Remember, these terms are from the viewpoint of the service. The service is in f
 
 ### How to create a service 
 
-<img src="./images/node-port-03.JPG" />
+<img src="./images/node-port-02.JPG" />
 
 Just like how we created a Deployment, ReplicaSet or Pod, we will use a definition file to create a service.
 The high level structure of the file remains the same. As before we have apiVersion, kind, metadata and spec sections. The apiVersion is going to be v1. The kind is ofcourse service. The metadata will have a name and that will be the name of the service. It can have labels, but we don’t need that for now. Next we have spec. and as always this is the most crucial part of the file as this is were we will be defining the actual services and this is the part of a definition file that differs between different objects.
