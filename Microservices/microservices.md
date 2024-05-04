@@ -1,4 +1,4 @@
-## What is Microservices Architecture?
+# What is Microservices Architecture?
 
 Microservices architecture is a design pattern for building distributed systems that emphasizes building small, independent services that communicate with each other using well-defined interfaces. Each microservice is a self-contained unit of functionality that can be developed, deployed, and scaled independently of the other services in the system.
 
@@ -6,16 +6,16 @@ Microservices architecture is a design pattern for building distributed systems 
 
 Typically, microservices are used to speed up application development. Microservices architectures built using Java are common, especially Spring Boot ones. It’s also common to compare microservices versus service-oriented architecture. Both have the same objective, which is to break up monolithic applications into smaller components, but they have different approaches. Here are some microservices architecture examples:
 
-# Website migration
+## Website migration
 A complex website that’s hosted on a monolithic platform can be migrated to a cloud-based and container-based microservices platform.
 
-# Media content
+## Media content
 Using microservices architecture, images and video assets can be stored in a scalable object storage system and served directly to web or mobile.
 
-# Transactions and invoices
+## Transactions and invoices
 Payment processing and ordering can be separated as independent units of services so payments continue to be accepted if invoicing is not working.
 
-# Data processing
+## Data processing
 A microservices platform can extend cloud support for existing modular data processing services.
 
 ## An example of Microservice architecture using a simple web application
